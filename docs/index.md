@@ -1,2 +1,7 @@
-# blogging-service
-UW PCE API Documentation - Portfolio documentation project
+---
+layout: default
+---
+
+# Blogging Service (currently working...)
+
+Portfolio documentation project
