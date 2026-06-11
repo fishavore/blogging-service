@@ -1,3 +1,5 @@
 title: Blogging Service
 description: UW PCE API Documentation - Portfolio documentation project
+# url: https://fishavore.github.io/blogging-service
+# baseurl: "/blogging-service"
 theme: jekyll-theme-cayman
