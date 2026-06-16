@@ -1,8 +1,41 @@
+---
+# markdownlint-disable
+# vale off
+# Jekyll theme tag
+layout: default
+# tags used by AI files
+description: Documents the Blogging Service for a new user
+topic_type: overview
+tags: introduction
+categories: tutorial
+ai_relevance: high
+# importance: 9
+prerequisites: []
+related_pages: /before-you-start-a-tutorial 
+examples: []
+api_endpoints: []
+version: "v1.1"
+last_updated: "2026-06-15"
+# vale on
+# markdownlint-enable
+---
 
-[comment]: # (Ignore markdownlint errors due to GitHub Pages Jekyll theme)
+# Blogging Service API
 
-First created on 2026-06-10
+Blogging Service is a REST API for creating and viewing blogs, including blog
+titles, posts, and comments.
 
-# Blogging service
+Users can create posts for their blog and enter comments on other users' posts.
+Comments can also be anonymous.
 
-Portfolio documentation project
+## Get started
+
+Ready to try the Blogging Service API? Jump onto this Quickstart (coming soon).
+
+Wanna learn more? Tutorials (coming soon) is the right place. Instructions to
+set up your system are at Before you start a tutorial (coming soon).
+
+## API reference
+
+Already know what you want? You can find descriptions of the resources in the
+API reference (coming soon).
