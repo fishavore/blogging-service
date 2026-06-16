@@ -1,10 +1,9 @@
 ---
 # markdownlint-disable
 # vale off
-# Jekyll theme tag
 layout: default
-# tags used by AI files
-description: Documents the Blogging Service for a new user
+title: Blogging Service
+description: UW PCE API Documentation - Portfolio documentation project
 topic_type: overview
 tags: introduction
 categories: tutorial
