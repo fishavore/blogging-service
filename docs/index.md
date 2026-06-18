@@ -19,7 +19,13 @@ last_updated: "2026-06-15"
 # markdownlint-enable
 ---
 
+<!-- vale Google.Headings = NO -->
+<!-- vale Google.Parens = NO -->
+<!-- markdownlint-disable MD025 -->
+
 # Blogging Service API
+
+<!-- markdownlint-enable MD025 -->
 
 Blogging Service is a REST API for creating and viewing blogs, including blog
 titles, posts, and comments.
