@@ -2,7 +2,8 @@
 # markdownlint-disable
 # vale off
 layout: default
-description: Information about the `blog` resource
+title: Blog resource
+description: Information about the blog resource
 topic_type: reference
 tags: api
 categories: api-reference
@@ -19,7 +20,11 @@ last_updated: "2026-06-16"
 # markdownlint-enable
 ---
 
-# `blog` resource
+<!-- markdownlint-disable MD025 -->
+
+# Blog resource
+
+<!-- markdownlint-enable MD025 -->
 
 Base endpoint:
 
@@ -38,11 +43,11 @@ more about the [user resource](user.md).
 
 ## Resource properties
 
-Sample `blog` resource
+Example `blog` resource
 
 ```json
 {
-    "blogId": 2,
+    "id": 2,
     "title": "Adventures in food",
     "userId": 2
 }
@@ -50,14 +55,14 @@ Sample `blog` resource
 
 | Property name | Type | Description |
 | ------------- | ----------- | ----------- |
-| `blogId` | number | The blog's unique record ID |
+| `id` | number | The blog's unique record ID |
 | `title` | string | The title or short description of the blog |
-| `userId` | number | The ID of the user resource to which this blog is assigned |
+| `userId` | number | The ID of the `user` resource to which this blog is assigned |
 
 ## Read operations
 
-<!-- vale Google.Parens = NO -->
+* [Get all blogs](blogs-get-all-blogs.md)
 
-* [Get all tasks _(coming soon)_](#resource-properties)
-* [Get task by ID _(coming soon)_](#resource-properties)
-* [Get task by user ID _(coming soon)_](#resource-properties)
+## Write operations
+
+* [Create a blog](blogs-create-blog.md)

@@ -2,7 +2,8 @@
 # markdownlint-disable
 # vale off
 layout: default
-description: Information about the `comment` resource
+title: Comment resource
+description: Information about the comment resource
 topic_type: reference
 tags: api
 categories: api-reference
@@ -19,7 +20,11 @@ last_updated: "2026-06-17"
 # markdownlint-enable
 ---
 
-# `comment` resource
+<!-- markdownlint-disable MD025 -->
+
+# Comment resource
+
+<!-- markdownlint-enable MD025 -->
 
 Base endpoint:
 
@@ -38,11 +43,11 @@ Learn more about the [user resource](user.md).
 
 ## Resource properties
 
-Sample `comment` resource
+Example `comment` resource
 
 ```json
 {
-    "commentId": 2,
+    "id": 2,
     "content": "Where did you find them?",
     "postedDate": "2026-06-05T14:00",
     "postId": 2,
@@ -54,16 +59,12 @@ Sample `comment` resource
 
 | Property name | Type | Description |
 | ------------- | ----------- | ----------- |
-| `commentId` | number | The ID of the comment resource |
+| `id` | number | The ID of the `comment` resource |
 | `content` | string | The content of this comment |
 | `postedDate` | string | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the date and time the comment is posted |
-| `postId` | number | The ID of the post resource associated with this comment |
+| `postId` | number | The ID of the `post` resource associated with this comment |
 | `userName` | string | The user's identification name in the service. `Anonymous` is used if the commenter isn't a user of the service |
 
 ## Read operations
 
-<!-- vale Google.Parens = NO -->
-
-* [Get all tasks _(coming soon)_](#resource-properties)
-* [Get task by ID _(coming soon)_](#resource-properties)
-* [Get task by user ID _(coming soon)_](#resource-properties)
+* [Get comments by post ID](comments-get-comments-by-postId.md)
