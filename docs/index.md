@@ -45,7 +45,7 @@ set up your system are at Before you start a tutorial (coming soon).
 Already know what you want? You can find descriptions of the resources in the
 API reference pages.
 
-* [user resource](api\user.md)
-* [blog resource](api\blog.md)
-* [post resource](api\post.md)
-* [comment resource](api\comment.md)
+* [user resource](api/user.md)
+* [blog resource](api/blog.md)
+* [post resource](api/post.md)
+* [comment resource](api/comment.md)
