@@ -1,6 +1,4 @@
 title: Blogging Service
-description: UW PCE API Documentation - Portfolio documentation project
+description: API Documentation course - Portfolio documentation project
 # APIDOC 310 A Spring 2026 API Documentation
-# url: https://fishavore.github.io/blogging-service
-# baseurl: "/blogging-service"
 theme: jekyll-theme-cayman

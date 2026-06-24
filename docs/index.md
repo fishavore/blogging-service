@@ -27,7 +27,7 @@ last_updated: "2026-06-15"
 
 <!-- markdownlint-enable MD025 -->
 
-Blogging Service is a REST API for creating and viewing blogs, including blog
+**Blogging Service** is a REST API for creating and viewing blogs, including blog
 titles, posts, and comments.
 
 Users can create posts for their blog and enter comments on other users' posts.
@@ -35,10 +35,10 @@ Comments can also be anonymous.
 
 ## Get started
 
-Ready to try the Blogging Service API? Jump onto this Quickstart (coming soon).
+Ready to try the **Blogging Service** API? Jump onto this Quickstart (coming soon).
 
-Wanna learn more? Tutorials (coming soon) is the right place. Instructions to
-set up your system are at Before you start a tutorial (coming soon).
+Wanna learn more? [Tutorials](tutorials/tutorial.md) is the right place. Instructions to
+set up your system are at [Before you start a tutorial](before-you-start-a-tutorial.md).
 
 ## API reference
 
