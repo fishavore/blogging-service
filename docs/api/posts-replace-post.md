@@ -18,8 +18,8 @@ test:
     local_database: /api/blogging-service.json
     testable: PUT example / 201
 api_endpoints: /posts
-version: "v1.0"
-last_updated: "2026-06-19"
+version: "v1.1"
+last_updated: "2026-06-24"
 # vale  on
 # markdownlint-enable
 ---
@@ -30,15 +30,15 @@ last_updated: "2026-06-19"
 
 <!-- markdownlint-enable MD025 -->
 
-Sends a [`post`](post.md) object to replace the details of the post resource in
-the service. The post task is for a registered user of the service.
+Sends a [`post`](post.md) object to replace the details of the resource in the
+service. The post task is for a registered user of the service.
 
-[Jump to examples](#examples)
+Jump to [examples](#examples)
 
 ## Endpoint
 
 ```shell
-{server_url}/posts/{id}
+{base_url}/posts/{id}
 ```
 
 ## Parameters
@@ -68,7 +68,7 @@ None
 
 ## Response body
 
-Returns a [`post` resource](post.md)
+Returns a [`post` resource](post.md).
 
 ## Examples
 
@@ -107,7 +107,7 @@ curl -X PUT -H 'content-type: application/json' \
 
 | HTTP status value | Description |
 | ------------- | ----------- |
-| 201 | **Success:** Task resource created successfully |
-| 400 | **Error:** Malformed request not processed. Verify syntax and try again. |
-| 500 | **Error:** Server rejected the data. Verify data and try again. |
-| 000 | **not**: Done yet |
+| 204 | **No Content:** Resource successfully replaced without response body |
+| 400 | **Bad Request:** Invalid data in request |
+| 404 | **Not Found:** Resource to update doesn't exist |
+| 409 | **Conflict**: Update conflicts with the current state |

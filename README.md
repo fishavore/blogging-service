@@ -1,4 +1,8 @@
+<!-- vale Google.Headings = NO -->
+
 # Blogging Service
+
+<!-- vale Google.Headings = YES -->
 
 REST API for Blogging Service
 
@@ -15,6 +19,10 @@ blogging-service/
 ```
 
 ## License
+
+<!-- vale Google.Passive = NO -->
+<!-- vale write-good.Passive = NO -->
+<!-- vale Google.Acronyms = NO -->
 
 This project is licensed under the MIT License.
 

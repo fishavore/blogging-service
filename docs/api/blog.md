@@ -14,8 +14,8 @@ related_pages: []
 #    - /tutorials/add-a-new-task
 examples: []
 api_endpoints: /blogs
-version: "v1.0"
-last_updated: "2026-06-16"
+version: "v1.1"
+last_updated: "2026-06-24"
 # vale on
 # markdownlint-enable
 ---
@@ -29,7 +29,7 @@ last_updated: "2026-06-16"
 Base endpoint:
 
 ```shell
-{server_url}/blogs
+{base_url}/blogs
 ```
 
 <!-- vale write-good = NO -->
@@ -39,7 +39,7 @@ Contains information about blogs stored for the users of the service. A blog is
 a collection of posts.
 
 To have a blog in the service, the user must be added to the service first. Learn
-more about the [user resource](user.md).
+more about the [`user` resource](user.md).
 
 ## Resource properties
 
@@ -66,3 +66,7 @@ Example `blog` resource
 ## Write operations
 
 * [Create a blog](blogs-create-blog.md)
+
+<!-- markdownlint-disable MD033 -->
+
+<div style="text-align: right;">| <a href="https://fishavore.github.io/blogging-service/">Home</a> | <a href="https://fishavore.github.io/blogging-service/api/reference.html">Reference</a> | <a href="https://fishavore.github.io/blogging-service/tutorials/tutorial.html">Tutorials</a> |</div>

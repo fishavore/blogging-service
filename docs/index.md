@@ -3,7 +3,7 @@
 # vale off
 layout: default
 title: Blogging Service
-description: UW PCE API Documentation - Portfolio documentation project
+description: API Documentation course - Portfolio documentation project
 topic_type: overview
 tags: introduction
 categories: tutorial

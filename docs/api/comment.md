@@ -14,8 +14,8 @@ related_pages: []
 #    - /tutorials/add-a-new-task
 examples: []
 api_endpoints: /comments
-version: "v1.0"
-last_updated: "2026-06-17"
+version: "v1.1"
+last_updated: "2026-06-24"
 # vale  on
 # markdownlint-enable
 ---
@@ -29,7 +29,7 @@ last_updated: "2026-06-17"
 Base endpoint:
 
 ```shell
-{server_url}/comments
+{base_url}/comments
 ```
 <!-- vale write-good = NO -->
 <!-- vale Google.Passive = NO -->
@@ -39,7 +39,7 @@ anonymous commenters.
 
 Anybody can add a comment in the service. To have a comment that's associated
 with a user in the service, the user must be added to the service first.
-Learn more about the [user resource](user.md).
+Learn more about the [`user` resource](user.md).
 
 ## Resource properties
 

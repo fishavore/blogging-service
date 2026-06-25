@@ -18,8 +18,8 @@ test:
     local_database: /api/blogging-service.json
     testable: GET example
 api_endpoints: /blogs
-version: "v1.0"
-last_updated: "2026-06-18"
+version: "v1.1"
+last_updated: "2026-06-24"
 # vale  on
 # markdownlint-enable
 ---
@@ -33,12 +33,12 @@ last_updated: "2026-06-18"
 Returns an array of [`blog`](blog.md) objects that contains all blogs that have
 created with the service.
 
-[Jump to examples](#examples)
+Jump to [examples](#examples)
 
 ## Endpoint
 
 ```shell
-{server_url}/blogs
+{base_url}/blogs
 ```
 
 ## Parameters
@@ -102,5 +102,5 @@ curl -G -H "Accept: application/json" \
 
 | HTTP status value | Description |
 | ------------- | ----------- |
-| 200 | **Success:** Requested data returned successfully |
-| 000 | **not**: Done yet |
+| 200 | **OK:** Resource found and returned |
+| 404 | **Not Found**: Resource doesn't exist |

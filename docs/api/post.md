@@ -14,8 +14,8 @@ related_pages: []
 #    - /tutorials/add-a-new-task
 examples: []
 api_endpoints: /posts
-version: "v1.0"
-last_updated: "2026-06-16"
+version: "v1.1"
+last_updated: "2026-06-24"
 # vale  on
 # markdownlint-enable
 ---
@@ -29,7 +29,7 @@ last_updated: "2026-06-16"
 Base endpoint:
 
 ```shell
-{server_url}/posts
+{base_url}/posts
 ```
 
 <!-- vale write-good = NO -->
@@ -38,8 +38,8 @@ Base endpoint:
 Contains information about posts stored for the users of the service.
 
 To have a post in the service, the user must be added to the service and have
-created their blog first. Learn more about the [user resource](user.md) and
-[blog resource](blog.md).
+created their blog first. Learn more about the [`user` resource](user.md) and
+[`blog` resource](blog.md).
 
 ## Resource properties
 

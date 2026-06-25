@@ -20,8 +20,8 @@ test:
     local_database: /api/blogging-service.json
     testable: GET example / 200
 api_endpoints: GET /posts
-version: "v1.0"
-last_updated: "2026-06-19"
+version: "v1.1"
+last_updated: "2026-06-24"
 # vale  on
 # markdownlint-enable
 ---
@@ -32,22 +32,22 @@ last_updated: "2026-06-19"
 
 <!-- markdownlint-enable MD025 -->
 
-Returns an array of  [`post`](post.md) objects that contains only the blog
-specified by the `blogId` parameter, if it exists.
+Returns an array of [`post`](post.md) objects that belong to the blog specified
+by the `blogId` parameter, if it exists.
 
-[Jump to examples](#examples)
+Jump to [examples](#examples)
 
 ## Endpoint
 
 ```shell
-{server_url}/posts/?blogId={blogId}
+{base_url}/posts/?blogId={blogId}
 ```
 
 ## Parameters
 
 | Name | Type | Value | Description |
 | ----- | ------ | ------ | ------------ |
-| `blogId` | URL | number | The record ID of the `blog` resource to return @??@ |
+| `blogId` | URL | number | The record ID of the `blog` resource |
 
 ## Request headers
 
@@ -61,13 +61,13 @@ None
 
 ## Response body
 
-Returns a [`post` resource](post.md)
+Returns an array of [`post` resources](post.md).
 
 ## Examples
 
 ### `GET` example request
 
-```bash
+```shell
 curl -G -H "Accept: application/json" \
     --url "http://localhost:3000/posts/?blogId=2"
 ```
@@ -96,6 +96,5 @@ curl -G -H "Accept: application/json" \
 
 | HTTP status value | Description |
 | ------------- | ----------- |
-| 200 | **Success**: Requested data returned successfully |
-| 404 | **Error**: Specified user record not found |
-| 000 | **not**: Done yet |
+| 200 | **OK:** Resource found and returned |
+| 404 | **Not Found**: Resource doesn't exist |

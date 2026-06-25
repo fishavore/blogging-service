@@ -20,8 +20,8 @@ test:
     local_database: /api/blogging-service.json
     testable: GET example / 200
 api_endpoints: GET /comments
-version: "v1.0"
-last_updated: "2026-06-19"
+version: "v1.1"
+last_updated: "2026-06-24"
 # vale  on
 # markdownlint-enable
 ---
@@ -35,12 +35,12 @@ last_updated: "2026-06-19"
 Returns an array of  [`comment`](comment.md) objects that contains only the
 user specified by the `postId` parameter, if it exists.
 
-[Jump to examples](#examples)
+Jump to [examples](#examples)
 
 ## Endpoint
 
 ```shell
-{server_url}/comments/?postId={postId}
+{base_url}/comments/?postId={postId}
 ```
 
 ## Parameters
@@ -61,7 +61,7 @@ None
 
 ## Response body
 
-Returns a [`comment` resource](comment.md)
+Returns a [`comment` resource](comment.md).
 
 ## Examples
 
@@ -97,6 +97,5 @@ curl -G -H "Accept: application/json" \
 
 | HTTP status value | Description |
 | ------------- | ----------- |
-| 200 | **Success**: Requested data returned successfully |
-| 404 | **Error**: Specified user record not found |
-| 000 | **not**: Done yet |
+| 200 | **OK:** Resource found and returned |
+| 404 | **Not Found**: Resource doesn't exist |

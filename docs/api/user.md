@@ -14,8 +14,8 @@ related_pages: []
 #    - /tutorials/enroll-a-new-user
 examples: []
 api_endpoints: /users
-version: "v1.0"
-last_updated: "2026-06-16"
+version: "v1.1"
+last_updated: "2026-06-24"
 # vale  on
 # markdownlint-enable
 ---
@@ -29,16 +29,16 @@ last_updated: "2026-06-16"
 Base endpoint:
 
 ```shell
-{server_url}/users
+{base_url}/users
 ```
 
 Contains information about the users of the service.
 
 A `user` resource describes the owners of the blogs, posts, and/or comments in
 the service. Before you can create a `blog` resource in the service, you must
-create a `user` resource to assign to the `blog`.
+create a `user` resource to assign to the blog.
 
-Learn more about the [blog resource](blog.md).
+Learn more about the [`blog` resource](blog.md).
 
 ## Resource properties
 

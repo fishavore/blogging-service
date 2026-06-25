@@ -20,8 +20,8 @@ test:
     local_database: /api/blogging-service.json
     testable: POST example / 201
 api_endpoints: /posts
-version: "v1.0"
-last_updated: "2026-06-19"
+version: "v1.1"
+last_updated: "2026-06-24"
 # vale  on
 # markdownlint-enable
 ---
@@ -35,12 +35,12 @@ last_updated: "2026-06-19"
 Sends a [`post`](post.md) object to store the details of the new post resource
 in the service. The new post is for a registered user of the service.
 
-[Jump to examples](#examples)
+Jump to [examples](#examples)
 
 ## Endpoint
 
 ```shell
-{server_url}/posts
+{base_url}/posts
 ```
 
 ## Parameters
@@ -69,7 +69,7 @@ None
 
 ## Response body
 
-Returns a [`post` resource](post.md)
+Returns a [`post` resource](post.md).
 
 ## Examples
 
@@ -108,7 +108,6 @@ curl -H 'content-type: application/json' \
 
 | HTTP status value | Description |
 | ------------- | ----------- |
-| 201 | **Success:** Task resource created successfully |
-| 400 | **Error:** Malformed request not processed. Verify syntax and try again. |
-| 500 | **Error:** Server rejected the data. Verify data and try again. |
-| 000 | **not**: Done yet |
+| 201 | **Created:** Resource successfully created |
+| 400 | **Bad Request:** Invalid data in request |
+| 422 | **Unprocessable Content:** Valid syntax but semantic errors |
