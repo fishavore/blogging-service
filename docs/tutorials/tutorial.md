@@ -11,7 +11,10 @@ ai_relevance: high
 # importance: 8
 prerequisites: []
 related_pages: 
-    - /tutorials/add-a-user
+    - /tutorials/users-add-user
+    - /tutorials/posts-update-post.md
+    - /tutorials/comments-add-comment
+    - /tutorials/comments-delete-comment.md
 examples: []
 api_endpoints: []
 version: "v1.0"
@@ -28,10 +31,13 @@ last_updated: "2026-06-24"
 
 Try these tutorials to find what **Blogging Service** can do.
 
-Check [Before you start a tutorial](before-you-start-a-tutorial.md) to make sure that you have everything you
+Check [Before you start a tutorial](../before-you-start-a-tutorial.md) to make sure that you have everything you
 need.
 
 * [Add a user](users-add-user.md)
+* [Add a comment](comments-add-comment.md)
+* [Update a post](posts-update-post.md)
+* [Delete a comment](comments-delete-comment.md)
 
 <!-- markdownlint-disable MD033 -->
 

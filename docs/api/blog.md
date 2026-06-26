@@ -11,7 +11,6 @@ ai_relevance: high
 # importance: 8
 prerequisites: []
 related_pages: []
-#    - /tutorials/add-a-new-task
 examples: []
 api_endpoints: /blogs
 version: "v1.1"
@@ -32,14 +31,12 @@ Base endpoint:
 {base_url}/blogs
 ```
 
-<!-- vale write-good = NO -->
-<!-- vale Google.Passive = NO -->
-
 Contains information about blogs stored for the users of the service. A blog is
 a collection of posts.
 
-To have a blog in the service, the user must be added to the service first. Learn
-more about the [`user` resource](user.md).
+To have a blog in the service, the user must be in the service first.
+
+Learn more about the [`user` resource](user.md).
 
 ## Resource properties
 
@@ -57,7 +54,7 @@ Example `blog` resource
 | ------------- | ----------- | ----------- |
 | `id` | number | The blog's unique record ID |
 | `title` | string | The title or short description of the blog |
-| `userId` | number | The ID of the `user` resource to which this blog is assigned |
+| `userId` | number | The ID of the `user` resource for this blog |
 
 ## Read operations
 

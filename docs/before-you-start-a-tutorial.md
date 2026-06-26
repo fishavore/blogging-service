@@ -66,7 +66,7 @@ database file.
     ```
 
 2. In another terminal on the same system, run the following command to get the
-[user resource](api/user.md):
+[`user` resource](api/user.md):
 
     ```shell
     curl http://localhost:3000/users
@@ -92,3 +92,7 @@ database file.
     ```
 
 Now, you are ready for the [Tutorials](tutorials/tutorial.md).
+
+<!-- markdownlint-disable MD033 -->
+
+<div style="text-align: right;">| <a href="https://fishavore.github.io/blogging-service/">Home</a> | <a href="https://fishavore.github.io/blogging-service/api/reference.html">Reference</a> | <a href="https://fishavore.github.io/blogging-service/tutorials/tutorial.html">Tutorials</a> |</div>

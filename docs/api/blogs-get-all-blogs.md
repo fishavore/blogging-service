@@ -14,7 +14,7 @@ related_pages: []
 examples: GET /blogs
 test:
     test_apps: json-server@0.17.4
-    server_url: localhost:3000
+    base_url: localhost:3000
     local_database: /api/blogging-service.json
     testable: GET example
 api_endpoints: /blogs
@@ -76,9 +76,8 @@ None
 
 ### `GET` example request
 
-```bash
-curl -G -H "Accept: application/json" \
-    --url "http://localhost:3000/blogs"
+```shell
+curl -G -H "Accept: application/json" --url "http://localhost:3000/blogs"
 ```
 
 #### `GET` example response
@@ -104,3 +103,7 @@ curl -G -H "Accept: application/json" \
 | ------------- | ----------- |
 | 200 | **OK:** Resource found and returned |
 | 404 | **Not Found**: Resource doesn't exist |
+
+<!-- markdownlint-disable MD033 -->
+
+<div style="text-align: right;">| <a href="https://fishavore.github.io/blogging-service/">Home</a> | <a href="https://fishavore.github.io/blogging-service/api/reference.html">Reference</a> | <a href="https://fishavore.github.io/blogging-service/tutorials/tutorial.html">Tutorials</a> |</div>

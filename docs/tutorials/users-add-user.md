@@ -49,21 +49,22 @@ database file.
     ```
 
 2. In another terminal on the same system, run the following command to add a
-[`user` resource](api/user.md). Note that you can change the values of each
-property in the Request body.
+[`user` resource](api/user.md). Note that you can change the value of each property in the
+request body, but you shouldn't change any property names, such as `userName`,
+in the example below.
 
     ```shell
-        curl -H 'content-type: application/json' \
-            --url http://localhost:3000/users \
-            -d '{
-                    "userName": "adventurer",
-                    "lastName": "Parvani",
-                    "firstName": "Everett"
-                }'
+    curl -H 'content-type: application/json' \
+        --url http://localhost:3000/users \
+        -d '{
+                "userName": "adventurer",
+                "lastName": "Parvani",
+                "firstName": "Everett"
+            }'
     ```
 
-3. After successfully adding the user, you get the response body with the
-values that you requested. `id` is the new user's unique record ID.
+3. After successfully adding the user, you get a response body with the
+values that you specified. `id` is the new user's unique record ID.
 
     ```json
     {

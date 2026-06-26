@@ -14,7 +14,7 @@ related_pages: []
 examples: POST /blog
 test:
     test_apps: json-server@0.17.4
-    server_url: localhost:3000
+    base_url: localhost:3000
     local_database: /api/blogging-service.json
     testable: POST example / 201
 api_endpoints: /blogs
@@ -94,3 +94,7 @@ curl -H 'content-type: application/json' \
 | 201 | **Created:** Resource successfully created |
 | 400 | **Bad Request:** Invalid data in request |
 | 422 | **Unprocessable Content:** Valid syntax but semantic errors |
+
+<!-- markdownlint-disable MD033 -->
+
+<div style="text-align: right;">| <a href="https://fishavore.github.io/blogging-service/">Home</a> | <a href="https://fishavore.github.io/blogging-service/api/reference.html">Reference</a> | <a href="https://fishavore.github.io/blogging-service/tutorials/tutorial.html">Tutorials</a> |</div>

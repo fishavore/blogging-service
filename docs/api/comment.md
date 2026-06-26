@@ -10,8 +10,9 @@ categories: api-reference
 ai_relevance: high
 # importance: 8
 prerequisites: []
-related_pages: []
-#    - /tutorials/add-a-new-task
+related_pages:
+    - /tutorials/comments-add-comment
+    - /tutorials/comments-delete-comment
 examples: []
 api_endpoints: /comments
 version: "v1.1"
@@ -31,15 +32,20 @@ Base endpoint:
 ```shell
 {base_url}/comments
 ```
-<!-- vale write-good = NO -->
-<!-- vale Google.Passive = NO -->
 
 Contains information about comments stored for the users of the service and
 anonymous commenters.
 
+To add a comment in the service, the blog and post must already be in the
+service.
+
 Anybody can add a comment in the service. To have a comment that's associated
-with a user in the service, the user must be added to the service first.
-Learn more about the [`user` resource](user.md).
+with a user in the service, the user must be in the service first. Use
+`Anonymous` for the `userName` property when the new comment isn't associated
+with any user in the service.
+
+Learn more about the [`user` resource](user.md), [`blog` resource](blog.md), and
+[`post` resource](post.md).
 
 ## Resource properties
 
@@ -61,10 +67,14 @@ Example `comment` resource
 | ------------- | ----------- | ----------- |
 | `id` | number | The ID of the `comment` resource |
 | `content` | string | The content of this comment |
-| `postedDate` | string | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the date and time the comment is posted |
+| `postedDate` | string | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the comment's date and time |
 | `postId` | number | The ID of the `post` resource associated with this comment |
-| `userName` | string | The user's identification name in the service. `Anonymous` is used if the commenter isn't a user of the service |
+| `userName` | string | The user's identification name in the service. `Anonymous` means that the commenter isn't a user of the service |
 
 ## Read operations
 
 * [Get comments by post ID](comments-get-comments-by-postId.md)
+
+<!-- markdownlint-disable MD033 -->
+
+<div style="text-align: right;">| <a href="https://fishavore.github.io/blogging-service/">Home</a> | <a href="https://fishavore.github.io/blogging-service/api/reference.html">Reference</a> | <a href="https://fishavore.github.io/blogging-service/tutorials/tutorial.html">Tutorials</a> |</div>

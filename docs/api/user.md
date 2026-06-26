@@ -10,8 +10,7 @@ categories: api-reference
 ai_relevance: high
 # importance: 8
 prerequisites: []
-related_pages: []
-#    - /tutorials/enroll-a-new-user
+related_pages: /tutorials/users-add-user
 examples: []
 api_endpoints: /users
 version: "v1.1"
@@ -62,5 +61,8 @@ Example `user` resource
 
 ## Tutorials
 
-* [Get all users _(coming soon)_](users-get-all-users.md)
-* [Get users by ID _(coming soon)_](users-get-user-by-id.md)
+* [Add a user](../tutorials/users-add-user.md)
+
+<!-- markdownlint-disable MD033 -->
+
+<div style="text-align: right;">| <a href="https://fishavore.github.io/blogging-service/">Home</a> | <a href="https://fishavore.github.io/blogging-service/api/reference.html">Reference</a> | <a href="https://fishavore.github.io/blogging-service/tutorials/tutorial.html">Tutorials</a> |</div>

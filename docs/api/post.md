@@ -10,8 +10,7 @@ categories: api-reference
 ai_relevance: high
 # importance: 8
 prerequisites: []
-related_pages: []
-#    - /tutorials/add-a-new-task
+related_pages: /tutorials/posts-update-post
 examples: []
 api_endpoints: /posts
 version: "v1.1"
@@ -32,14 +31,12 @@ Base endpoint:
 {base_url}/posts
 ```
 
-<!-- vale write-good = NO -->
-<!-- vale Google.Passive = NO -->
-
 Contains information about posts stored for the users of the service.
 
-To have a post in the service, the user must be added to the service and have
-created their blog first. Learn more about the [`user` resource](user.md) and
-[`blog` resource](blog.md).
+To have a post in the service, the user must be in the service and have created
+their blog first.
+
+Learn more about the [`user` resource](user.md) and [`blog` resource](blog.md).
 
 ## Resource properties
 
@@ -54,7 +51,10 @@ Example `post` resource
     "private": true,
     "blogId": 2,
     "category": "food",
-    "commentIds": [1, 2]
+    "commentIds": [
+        1,
+        2
+    ]
 }
 ```
 
@@ -62,10 +62,10 @@ Example `post` resource
 
 | Property name | Type | Description |
 | ------------- | ----------- | ----------- |
-| `id` | number | The ID of the `post` resource to which this post is assigned |
+| `id` | number | The ID of the `post` resource |
 | `title` | string | The title or short description of the post |
 | `content` | string | The content of this post |
-| `postedDate` | string | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the date and time the post is posted |
+| `postedDate` | string | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the post's date and time |
 | `private` | boolean | The visibility of the post content. Set this to false to make the post public. |
 | `blogId` | number | The blog's unique record ID |
 | `category` | string | The label to categorize the post |
@@ -79,3 +79,7 @@ Example `post` resource
 
 * [Create a post](posts-create-post.md)
 * [Replace a post](posts-replace-post.md)
+
+<!-- markdownlint-disable MD033 -->
+
+<div style="text-align: right;">| <a href="https://fishavore.github.io/blogging-service/">Home</a> | <a href="https://fishavore.github.io/blogging-service/api/reference.html">Reference</a> | <a href="https://fishavore.github.io/blogging-service/tutorials/tutorial.html">Tutorials</a> |</div>

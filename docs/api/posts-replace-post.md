@@ -14,7 +14,7 @@ related_pages: []
 examples: PUT /posts/{id}
 test:
     test_apps: json-server@0.17.4
-    server_url: localhost:3000
+    base_url: localhost:3000
     local_database: /api/blogging-service.json
     testable: PUT example / 201
 api_endpoints: /posts
@@ -74,7 +74,7 @@ Returns a [`post` resource](post.md).
 
 ### `PUT` example request
 
-```bash
+```shell
 curl -X PUT -H 'content-type: application/json' \
     --url http://localhost:3000/posts/1 \
     -d '{
@@ -100,7 +100,7 @@ curl -X PUT -H 'content-type: application/json' \
     "category": "drink",
     "commentIds": [],
     "id": 1
-  }
+}
 ```
 
 ## Response status
@@ -111,3 +111,7 @@ curl -X PUT -H 'content-type: application/json' \
 | 400 | **Bad Request:** Invalid data in request |
 | 404 | **Not Found:** Resource to update doesn't exist |
 | 409 | **Conflict**: Update conflicts with the current state |
+
+<!-- markdownlint-disable MD033 -->
+
+<div style="text-align: right;">| <a href="https://fishavore.github.io/blogging-service/">Home</a> | <a href="https://fishavore.github.io/blogging-service/api/reference.html">Reference</a> | <a href="https://fishavore.github.io/blogging-service/tutorials/tutorial.html">Tutorials</a> |</div>
