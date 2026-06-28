@@ -16,8 +16,8 @@ prerequisites:
 related_pages: []
 examples: []
 api_endpoints: POST /comments
-version: "v1.0"
-last_updated: "2026-06-25"
+version: "v1.1"
+last_updated: "2026-06-27"
 # vale  on
 # markdownlint-enable
 ---
@@ -50,13 +50,13 @@ Learn more about the [`user` resource](user.md), [`blog` resource](blog.md), and
 
 ## Add a comment
 
-You are going to use the `POST` method to add a [`comment`](../api/comments.md) resource in the
+You are going to use the `POST` method to add a [`comment` resource](../api/comments.md) in the
 service.
 
 This tutorial adds a new comment by `adventurer`. The [Add a user](users-add-user.md) tutorial
 adds the `adventurer` user to the **Blogging Service** database.
 
-1. In a terminal, run JSON-Server from the same folder as the **Blogging Service**
+1. In a terminal, run JSON Server from the same folder as the **Blogging Service**
 database file.
 
     ```shell

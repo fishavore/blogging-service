@@ -16,8 +16,8 @@ prerequisites:
 related_pages: []
 examples: []
 api_endpoints: PATCH /posts/{id}
-version: "v1.0"
-last_updated: "2026-06-24"
+version: "v1.1"
+last_updated: "2026-06-27"
 # vale on
 # markdownlint-enable
 ---
@@ -45,12 +45,12 @@ Learn more about the [`user` resource](../api/user.md) and [`blog` resource](../
 ## Update a post
 
 You are going to use the `PATCH` method to update one or more properties of the
-[`post`](../api/post.md) resource in the service.
+[`post` resource](../api/post.md) in the service.
 
 This tutorial updates a post to add a comment with `id` of `3`. The
 [Add a comment](comments-add-comment.md) tutorial adds that comment to the **Blogging Service** database.
 
-1. In a terminal, run JSON-Server from the same folder as the **Blogging Service**
+1. In a terminal, run JSON Server from the same folder as the **Blogging Service**
 database file.
 
     ```shell

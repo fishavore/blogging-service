@@ -10,12 +10,13 @@ categories: tutorial
 ai_relevance: high
 # importance: 9
 prerequisites: []
-related_pages: 
+related_pages:
+    - /tutorials/tutorial.md
     - /tutorials/users-add-user.md
 examples: []
 api_endpoints: []
-version: "v1.0"
-last_updated: "2026-06-23"
+version: "v1.1"
+last_updated: "2026-06-27"
 # vale  on
 # markdownlint-enable
 ---
@@ -26,7 +27,7 @@ last_updated: "2026-06-23"
 
 <!-- markdownlint-enable MD025 -->
 
-Do you have JSON-Server and `curl` on your system? If so, download the
+Do you have JSON Server and `curl` on your system? If so, download the
 [Blogging Service database file](https://github.com/fishavore/blogging-service/blob/main/api/blogging-service.json) and jump to [Test your system](#test-your-system).
 
 Otherwise, move on to prepare for the tutorials. This should take about 20
@@ -37,7 +38,7 @@ minutes.
 You need the following software to successfully run the tutorials.
 
 - [node.js](https://nodejs.org/en/download)
-- Version 0.17.4 of [json-server](https://www.npmjs.com/package/json-server/v/0.17.4)
+- Version 0.17.4 of [JSON Server](https://www.npmjs.com/package/json-server/v/0.17.4)
 - [curl](https://curl.se/download.html)
 - [Blogging Service database file](https://github.com/fishavore/blogging-service/blob/main/api/blogging-service.json)
 
@@ -45,7 +46,7 @@ You need the following software to successfully run the tutorials.
 
 Follow these steps:
 
-1. In a terminal, run JSON-Server from the same folder as the **Blogging Service**
+1. In a terminal, run JSON Server from the same folder as the **Blogging Service**
 database file.
 
     ```shell
