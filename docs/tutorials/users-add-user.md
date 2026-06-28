@@ -9,10 +9,8 @@ tags: api
 categories: tutorial
 ai_relevance: high
 # importance: 6
-prerequisites:
-    - /before-you-start-a-tutorial
-    - /api/user
-related_pages: []
+prerequisites: /before-you-start-a-tutorial
+related_pages: /api/user
 examples: []
 api_endpoints: POST /users
 version: "v1.1"

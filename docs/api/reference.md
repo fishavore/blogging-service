@@ -13,8 +13,8 @@ prerequisites: []
 related_pages: []
 examples: []
 api_endpoints: []
-version: "v1.0"
-last_updated: "2026-06-24"
+version: "v1.1"
+last_updated: "2026-06-27"
 # vale  on
 # markdownlint-enable
 ---
@@ -32,7 +32,7 @@ The `{base_url}` in the documentation is a placeholder for the URL of a
 resource, and it varies depending on the installation of the service.
 
 Generally, use `http://localhost:3000` to run tests on your system. The steps
-to set up and test your system are in [Before you start a tutorial](before-you-start-a-tutorial.md).
+to set up and test your system are in [Before you start a tutorial](../before-you-start-a-tutorial.md).
 
 ## User resource
 

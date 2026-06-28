@@ -9,14 +9,13 @@ tags: api
 categories: tutorial
 ai_relevance: high
 # importance: 6
-prerequisites:
-    - /before-you-start-a-tutorial
+prerequisites: /before-you-start-a-tutorial
+related_pages:
     - /api/blog
     - /api/post
-related_pages: []
 examples: []
 api_endpoints: POST /comments
-version: "v1.1"
+version: "v1.2"
 last_updated: "2026-06-27"
 # vale  on
 # markdownlint-enable
@@ -50,7 +49,7 @@ Learn more about the [`user` resource](user.md), [`blog` resource](blog.md), and
 
 ## Add a comment
 
-You are going to use the `POST` method to add a [`comment` resource](../api/comments.md) in the
+You are going to use the `POST` method to add a [`comment` resource](../api/comment.md) in the
 service.
 
 This tutorial adds a new comment by `adventurer`. The [Add a user](users-add-user.md) tutorial

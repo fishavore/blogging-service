@@ -9,11 +9,10 @@ tags: api
 categories: tutorial
 ai_relevance: high
 # importance: 6
-prerequisites:
-    - /before-you-start-a-tutorial
+prerequisites: /before-you-start-a-tutorial
+related_pages:
     - /api/blog
     - /api/post
-related_pages: []
 examples: []
 api_endpoints: PATCH /posts/{id}
 version: "v1.1"
