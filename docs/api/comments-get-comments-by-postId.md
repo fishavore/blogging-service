@@ -47,7 +47,7 @@ Jump to [examples](#examples)
 
 | Name | Type | Value | Description |
 | ----- | ------ | ------ | ------------ |
-| `postId` | URL | number | The record ID of the `post` resource to return @??@ |
+| `postId` | URL | number | The record ID of the `post` resource |
 
 ## Request headers
 
