@@ -13,8 +13,8 @@ prerequisites: []
 related_pages: /before-you-start-a-tutorial 
 examples: []
 api_endpoints: []
-version: "v1.1"
-last_updated: "2026-06-15"
+version: "v1.2"
+last_updated: "2026-06-27"
 # vale on
 # markdownlint-enable
 ---
@@ -35,10 +35,10 @@ Comments can also be anonymous.
 
 ## Get started
 
-Ready to try the **Blogging Service** API? Jump onto this Quickstart (coming soon).
+Ready to try the **Blogging Service** API? Instructions to set up your system are
+at [Before you start a tutorial](before-you-start-a-tutorial.md).
 
-Wanna learn more? [Tutorials](tutorials/tutorial.md) is the right place. Instructions to
-set up your system are at [Before you start a tutorial](before-you-start-a-tutorial.md).
+Wanna learn more? [Tutorials](tutorials/tutorial.md) is the right place.
 
 ## API reference
 
